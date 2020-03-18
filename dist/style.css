@@ -88,3 +88,21 @@ body {
 .active {
   box-shadow: 2px 3px 5px 0px black;
 }
+
+.footer {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.footer-love-icon {
+  height: 10px;
+  padding-left: 1px;
+  padding-right: 1px;
+  animation: beat .55s infinite alternate;
+}
+@keyframes beat{
+  to { transform: scale(1.4); }
+}
+
+
+
