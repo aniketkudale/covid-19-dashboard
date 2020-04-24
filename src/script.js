@@ -1,4 +1,4 @@
-setInterval(function(){fetch('https://thevirustracker.com/free-api?global=stats')
+setInterval(function(){fetch('https://api.thevirustracker.com/free-api?global=stats')
   .then((response) => {
     return response.json();
   })
@@ -29,7 +29,7 @@ setInterval(function(){fetch('https://thevirustracker.com/free-api?global=stats'
     
   });}, 120000);
 
-fetch('https://thevirustracker.com/free-api?global=stats')
+fetch('https://api.thevirustracker.com/free-api?global=stats')
   .then((response) => {
     return response.json();
   })
@@ -88,7 +88,7 @@ fetch('https://restcountries.eu/rest/v2/all')
 });
 
 function country(code) {
-  fetch('https://thevirustracker.com/free-api?countryTotal=' + code)
+  fetch('https://api.thevirustracker.com/free-api?countryTotal=' + code)
   .then((response) => {
     return response.json();
   })
